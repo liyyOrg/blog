@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./lside.css">
+    <link rel="stylesheet" href="./rside.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        header{
+            height: 156px;
+            background: white;
+
+        }
+        header div{
+            padding: 40px;
+            height: 76px;
+            width: 1100px;
+            margin: 0px auto;
+        }
+        header h2{
+            font: bold 45px/54px '宋体','新宋',serif;
+        }
+        header p{
+            color: rgb(153,153,153);
+            font:15px/22.5px  '宋体','新宋',serif;
+        }
+
+        body{
+            background: #efefef;
+        }
+        nav{
+            height: 60px;
+            background: #222;
+        }
+        #main{
+            width: 1100px;
+            /*height:1000px;*/
+            /*background: yellow;*/
+            margin: 0px auto;
+        }
+        #lside{
+            width: 805px;
+            /*height: 580px;*/
+            /*background: gray;*/
+            float: left;
+        }
+        #rside{
+            width: 275px;
+            /*height: 580px;*/
+            /*background: pink;*/
+            float: right;
+        }
+        footer{
+            height: 65px;
+            background: #222;
+            font: 17px/65px '微软雅黑','黑体','文泉驿正黑体',sans-serif;
+            color: white;
+            text-align: center;
+        }
+        aside:first-child{
+            margin-top: 20px;
+        }
+        article:first-child{
+            margin-top: 20px;
+        }
+        #main::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .tags-links:before, .floder-links:before,.comments-links:before{
+
+            display: inline-block;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            margin-right: 4px;
+            position: relative;
+            text-align: center;
+            text-decoration: inherit;
+            width: 13px;
+        }
+        .tags-links:before{
+            content: "\f02c";
+        }
+        .floder-links:before{
+            content: "\f07b";
+        }
+        .comments-links:before{
+            content: "\f075";
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h2>李扬扬的blog</h2>
+            <p>天下难事，必做于易；天下大事，必做于细</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li id="first-li"><a href="#">导航</a></li>
+            <li><a href="#">导航</a></li>
+            <li>
+                <a href="#">导航</a>
+                <img src="./news.png" alt="">
+            </li>
+            <li><a href="#">导航</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div id="lside">
+            <article>
+                <h2><a href="#">午后的街头</a></h2>
+                <div>
+                <span>
+                    <time>2015-01-28</time>
+                </span>
+                <sapn> by <a href="#">老十八</a>
+                </sapn>
+                <span class="floder-links"><a href="#">闲谈随笔</a></span>
+                <span class="tags-links">
+                    <a href="#">午后</a>|
+                    <a href="#">时光</a>
+                </span>
+                <span class="comments-links"><a href="#">9条评论</a></span>
+                </div>
+                <p>有时突然想说我爱你，<br>
+                    有时突然慌张忧伤。<br>
+                    <br>
+                    像迷路的孩子，<br>
+                    东张西望。<br>
+                    <br>
+                    伸出双手想抓住，时光像泥鳅一样。<br></p>
+            </article>
+
+
+            <article>
+                <h2><a href="#">午后的街头</a></h2>
+                <div>
+                <span>
+                    <time>2015-01-28</time> by
+                </span>
+                    <sapn>
+                        <a href="#">十八</a>
+                    </sapn>
+                    <span>闲谈随笔</span>
+                    <span>
+                    <a href="#">午后</a>|
+                    <a href="#">时光</a>
+                </span>
+                    <span>9条评论</span>
+                </div>
+                <p>有时突然想说我爱你，<br>
+                    有时突然慌张忧伤。<br>
+                    <br>
+                    像迷路的孩子，<br>
+                    东张西望。<br>
+                    <br>
+                    伸出双手想抓住，时光像泥鳅一样。<br></p>
+            </article>
+            <div id="page">
+                Pages:
+                <a href="#">1</a>
+                <a href="#">2</a>
+                3
+                <!--<a href="#">3</a>-->
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">Next</a>
+            </div>
+        </div>
+        <div id="rside">
+            <aside>
+                <form action="#">
+                    <input type="search" name="" id=""  placeholder="Search...">
+                </form>
+            </aside>
+
+            <aside>
+                <h4>分类目录</h4>
+                <ul>
+                    <li><a href="#">分类目录</a>&nbsp;(1)</li>
+                    <li><a href="#">分类目录</a>&nbsp;(2)</li>
+                    <li><a href="#">分类目录</a></li>
+                    <li><a href="#">分类目录</a></li>
+                    <li><a href="#">分类目录</a></li>
+                </ul>
+            </aside>
+
+            <aside>
+                <h4>分类目录</h4>
+                <ul>
+                    <li><a href="#">分类目录</a></li>
+                    <li><a href="#">分类目录</a></li>
+                    <li><a href="#">分类目录</a></li>
+                    <li><a href="#">分类目录</a></li>
+                    <li><a href="#">分类目录</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+    <footer>
+        Copyright &copy; 2015 · GeneratePress · WordPress
+    </footer>
+</body>
+</html>

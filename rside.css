@@ -1,0 +1,37 @@
+aside{
+    background: white;
+    margin-bottom: 20px;
+    padding: 40px;
+}
+aside form {
+    background: white;
+    box-sizing: border-box;
+}
+aside form input {
+    width: 195px;
+    height: 45px;
+    background: white;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    font-size: 17px;
+    /*
+    Git
+    */
+}
+aside h4{
+    color: black;
+    font: 20px/30px '微软雅黑','黑体','文泉驿正黑体',sans-serif;
+    margin-bottom: 30px;
+}
+aside a,aside a:hover{
+    font: 14px/21px '微软雅黑','黑体','文泉驿正黑体',sans-serif;
+}
+aside a{
+    color: #1e73be;
+}
+aside a:hover{
+    color: black;
+}
+aside ul li{
+    padding-bottom: 5px;
+}
